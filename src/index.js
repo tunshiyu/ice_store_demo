@@ -58,6 +58,7 @@ function Todo() {
         <input
           onKeyDown={event => {
             if (event.keyCode === 13) {
+              event.preventDefault();
               onAdd(event.target.value);
               event.target.value = '';
             }

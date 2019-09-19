@@ -5,14 +5,14 @@ export default {
       setTimeout(() => {
         resolve([
           {
-            name: 'react'
+            name: 'mobx'
           },
           {
-            name: 'vue',
+            name: 'redux',
             done: true
           },
           {
-            name: 'angular'
+            name: 'hooks+ice-store'
           }
         ]);
       }, 1000)
