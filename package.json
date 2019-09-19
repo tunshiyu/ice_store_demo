@@ -1,0 +1,29 @@
+{
+  "name": "ice-store",
+  "version": "1.0.0",
+  "description": "The example project from @ice/store in a codesandbox.\n",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@ice/store": "0.3.0",
+    "@ice/store-logger": "0.1.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "2.1.8"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
