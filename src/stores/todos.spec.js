@@ -5,46 +5,46 @@ describe('todos', () => {
     await todos.refresh();
     expect(todos.dataSource).toEqual([
       {
-        name: 'react'
+        name: 'mobx'
       },
       {
-        name: 'vue',
+        name: 'redux',
         done: true
       },
       {
-        name: 'angular'
+        name: 'hooks+ice-store'
       }
     ]);
   });
   test('add new todo success', async () => {
-    todos.add({ name: 'rax' });
+    todos.add({ name: 'leishu' });
     expect(todos.dataSource).toEqual([
       {
-        name: 'react'
+        name: 'mobx'
       },
       {
-        name: 'vue',
+        name: 'redux',
         done: true
       },
       {
-        name: 'angular'
+        name: 'hooks+ice-store'
       },
       {
-        name: 'rax'
+        name: 'leishu'
       }
     ]);
   });
-  test('remove todo success', async () => {
+  test('remove redux  success', async () => {
     todos.remove(1);
     expect(todos.dataSource).toEqual([
       {
-        name: 'react'
+        name: 'mobx'
       },
       {
-        name: 'angular'
+        name: 'hooks+ice-store'
       },
       {
-        name: 'rax'
+        name: 'leishu'
       }
     ]);
   });
@@ -52,14 +52,14 @@ describe('todos', () => {
     todos.toggle(0);
     expect(todos.dataSource).toEqual([
       {
-        name: 'react',
+        name: 'mobx',
         done: true
       },
       {
-        name: 'angular'
+        name: 'hooks+ice-store'
       },
       {
-        name: 'rax'
+        name: 'leishu'
       }
     ]);
   });
