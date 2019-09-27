@@ -6,7 +6,8 @@ import { func } from 'prop-types';
 function Todo() {
   // 拿到store库
   const todos = stores.useStore('todos');
-  const { dataSource, refresh, add, remove, toggle } = todos;
+  const { refresh, add, remove, toggle } = todos;
+  const { dataSource } = stores.getState('todos');
 
   async function fetchData() {
     const data = await refresh();

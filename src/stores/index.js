@@ -9,7 +9,9 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const icestore = new Icestore();
+const stores = {
+  todos
+};
 icestore.applyMiddleware(middlewares);
-icestore.registerStore('todos', todos);
-
+Object.keys(stores).forEach(key => icestore.registerStore(key, stores[key]));
 export default icestore;
